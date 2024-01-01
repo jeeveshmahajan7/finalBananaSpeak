@@ -23,6 +23,11 @@ h1, h2 {
     background-color: var(--primary-color);
 }
 
+main {
+    margin: auto;
+    padding: 1rem;
+}
+
 button {
     background-color: var(--primary-color);
     border: none;
@@ -33,6 +38,8 @@ button {
 
 textarea {
     width: 100%;
+    box-sizing: border-box;
+    display: block;
     margin-top: 1rem;
     padding: 1rem;
     display: block;
@@ -48,8 +55,13 @@ textarea {
 
 
 #output-div {
+    display: block;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid;
+    width: 100%;
     margin-bottom: 0rem;
-    min-height: 10vh;
+    min-height: 15vh;
     max-height: 20vh;
     overflow: scroll;
 }
@@ -64,6 +76,9 @@ textarea {
     background-color: var(--primary-color);
     margin-top: 1rem;
     padding-top: 0.1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer h2 {
